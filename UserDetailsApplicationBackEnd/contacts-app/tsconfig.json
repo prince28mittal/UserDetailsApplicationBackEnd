@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "noEmit": false, // ✅ Ensure this is set to false
+    "outDir": "./dist", // ✅ Ensure an output directory is specified
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true
+  }
+}
+
