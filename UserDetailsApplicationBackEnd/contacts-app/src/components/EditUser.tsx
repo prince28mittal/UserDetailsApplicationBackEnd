@@ -6,7 +6,7 @@ const EditUser: React.FC = () => {
     const location = useLocation();
     const user = location.state?.user as User;
 
-    // Define a function to handle form submission
+    // A function to handle form submission
     const handleUserUpdate = (updatedUser: User) => {
         fetch(`/UserModels/Edit?id=${updatedUser.id}`, {
             method: 'POST',
