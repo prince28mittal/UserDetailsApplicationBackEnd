@@ -2,7 +2,7 @@ import React from 'react';
 import UserForm, { User } from './UserForm';
 
 const CreateUser: React.FC = () => {
-    // Define a function to handle form submission
+    // A function to handle form submission
     const handleUserSubmit = (user: User) => {
         fetch('/UserModels/Create', {
             method: 'POST',body: JSON.stringify(user),headers: {
@@ -10,8 +10,7 @@ const CreateUser: React.FC = () => {
             }}).then(() => {
                 // Redirect to the list of users
                 window.location.href = '/';
-            });
-            // Add logic to handle user creation                ;
+            });               ;
     };
 
     return (

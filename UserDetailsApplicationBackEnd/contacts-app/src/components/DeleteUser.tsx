@@ -7,7 +7,6 @@ const DeleteUser: React.FC = () => {
         await fetch(`/UserModels/Delete?email=${email}`, {
             method: 'DELETE'
         });
-        // Add logic to handle user deletion
     };
 
     return (
